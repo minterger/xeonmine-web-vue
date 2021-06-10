@@ -1,30 +1,100 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <Header />
+  <div class="container-all">
+    <router-view/>
+    <Footer/>
   </div>
-  <router-view/>
+  <ChangeTheme />
 </template>
 
+<script>
+import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
+import ChangeTheme from "@/components/ChangeTheme.vue";
+
+export default {
+  components: {
+    Header,
+    Footer,
+    ChangeTheme
+  }
+}
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+:root {
+  --nor-query-width: 924px;
+  --mid-query-width: 545px;
+  --min-query-width: 400px;
+}
+body {
+  --color-text: #000000;
+  --color-items: #131313;
+  --color-bg-content: #FEFEFE;
+  --btn-active: #0000006b;
+  --btn-change: #8f8d8da6;
+  --color-bg: #ffffff;
+  --menu-dark: #5c6979;
 }
 
-#nav {
-  padding: 30px;
+body.dark-theme {
+  --color-text: #ffffff;
+  --color-items: #fcfbfb;
+  --color-bg-content: #1d232b;
+  --btn-active: #0000006b;
+  --btn-change: #0000006b;
+  --color-bg: #1d232b;
+  --menu-dark: #353e49;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --color-text: #ffffff;
+    --color-items: #fcfbfb;
+    --color-bg-content: #1d232b;
+    --btn-active: #0000006b;
+    --btn-change: #0000006b;
+    --color-bg: #1d232b;
+    --menu-dark: #353e49;
+  }
+  
+  body.white-theme {
+    --color-text: #000000;
+    --color-items: #131313;
+    --color-bg-content: #FEFEFE;
+    --btn-active: #0000006b;
+    --btn-change: #8f8d8da6;
+    --color-bg: #ffffff;
+    --menu-dark: #5c6979;
+  }
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-text);
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  min-height: calc(100vh - 45px);
+  position: relative;
+  padding-bottom: 45px;
+}
+
+.container {
+  margin:auto;
+  width: 90%;
+}
+
+#informacion {
+  height: 100vh;
+}
+
+.show {
+  padding-top: 3em;
 }
 </style>
