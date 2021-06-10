@@ -48,6 +48,7 @@ export default {
     background-color: var(--color-bg);
     display: flex;
     height: 3em;
+    box-shadow: 0px 1px 10px var(--shadow-color);
 }
 .header{
     z-index: 10;

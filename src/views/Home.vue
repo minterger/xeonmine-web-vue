@@ -1,9 +1,13 @@
 <template>
   <div>
     <ContentHeader :msg="msg"/>
-    <div class="container" id="informacion">
-      <img alt="Vue logo" src="img/logo.jpeg">
-    </div>
+    <section id="informacion" class="container">
+      <img class="img-svg" src="img/chat_bot.svg" alt="">
+      <div>
+        <h3 class="title-text-right">Sobre Nuestro Bot</h3>
+        <p class="text-right">Necesitas un bot de moderación y entretenimiento? Te presentó  a Xeonmine</p>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -27,8 +31,49 @@ export default {
 </script>
 
 <style scoped>
-  img {
-    width: 10%;
-    height: auto;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 950px;
+  }
+
+  .container > div {
+    margin-left: 20px;
+  }
+
+  .title-text-right {
+    margin-bottom: 10px;
+  }
+
+  .img-svg {
+    height: 15em;
+    
+  }
+
+  @media screen and (max-width: 924px) {
+    .img-svg {
+      height: 11em;
+    }
+  }
+
+  @media screen and (max-width: 545px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .title-text-right {
+      margin-bottom: 15px;
+    }
+
+    .img-svg {
+      height: 9em;
+      margin: 20px 0;
+    }
+
+    .container > div {
+      margin-left: 0;
+    }
   }
 </style>

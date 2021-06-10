@@ -51,10 +51,10 @@ export default {
 }
 .change-theme .bx {
     font-size: 1.5rem;
-    transition: font-size .5s;
+    transition: font-size .5s ease-in-out;
 }
 .change-theme:hover .bx{
-    transition: font-size .5s;
+    transition: font-size .5s ease-in-out;
     font-size: 1.7rem;
 }
 </style>

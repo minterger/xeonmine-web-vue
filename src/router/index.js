@@ -15,6 +15,11 @@ const routes = [
     path: '/comandos',
     name: 'Comandos',
     component: () => import('@/views/Comandos.vue')
+  },
+  {
+    path: '/:404*',
+    name: 'PageNotFound',
+    component: () => import('@/views/PageNotFound.vue')
   }
 ]
 

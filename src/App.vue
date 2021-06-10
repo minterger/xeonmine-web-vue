@@ -35,6 +35,7 @@ body {
   --btn-change: #8f8d8da6;
   --color-bg: #ffffff;
   --menu-dark: #5c6979;
+  --shadow-color: #11161c2a;
 }
 
 body.dark-theme {
@@ -45,6 +46,7 @@ body.dark-theme {
   --btn-change: #0000006b;
   --color-bg: #1d232b;
   --menu-dark: #353e49;
+  --shadow-color: #11161c;
 }
 
 
@@ -57,6 +59,7 @@ body.dark-theme {
     --btn-change: #0000006b;
     --color-bg: #1d232b;
     --menu-dark: #353e49;
+    --shadow-color: #11161c;
   }
   
   body.white-theme {
@@ -67,6 +70,7 @@ body.dark-theme {
     --btn-change: #8f8d8da6;
     --color-bg: #ffffff;
     --menu-dark: #5c6979;
+    --shadow-color: #11161c2a;
   }
 }
 
@@ -91,10 +95,23 @@ body {
 }
 
 #informacion {
-  height: 100vh;
+  min-height: 500px;
 }
 
 .show {
   padding-top: 3em;
+}
+
+@media screen and (max-width: 924px) {
+  .container {
+    width: 95%;
+  }
+
+}
+
+@media screen and (max-width: 545px) {
+  .container {
+    width: 98%;
+  }
 }
 </style>

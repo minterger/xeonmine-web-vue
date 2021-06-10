@@ -1,9 +1,13 @@
 <template>
   <div class="sobre">
     <ContentHeader :msg="msg" />
-    <div class="container" id="informacion">
-      <h1>This is an about page</h1>
-    </div>
+    <section id="informacion" class="container">
+      <h1 class="title-text-right">Sobre Nosotros</h1>
+      <div>
+        <p class="text-right">El Bot fue creado principalmente para la comunidad de Xeonmine, pero se abrio al público para que mas gente lo pudiera usar</p>
+        <p class="text-right">El creador del bot es 𝑅𝒶𝒾𝓃#5009 y el de la pagina es Minterger#5226</p>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -23,3 +27,23 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 96vw;
+    align-items: center;
+  }
+
+  .title-text-right {
+    margin: 30px 0;
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .text-right {
+    margin: 20px 0;
+  }
+</style>

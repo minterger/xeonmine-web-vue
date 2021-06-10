@@ -47,6 +47,7 @@ export default {
   .logo-text {
     margin: 30px auto 10px auto;
     font-size: 1.10em;
+    max-width: 550px;
     color: #fff;
     text-align: center;
   }
@@ -76,5 +77,12 @@ export default {
 
   .bx {
     color: #fff;
+  }
+
+  @media screen and (max-width: 331px) {
+    .container > div {
+      display: flex;
+      flex-direction: column;
+    }
   }
 </style>
