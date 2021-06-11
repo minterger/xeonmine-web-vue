@@ -87,11 +87,15 @@ body {
   min-height: calc(100vh - 45px);
   position: relative;
   padding-bottom: 45px;
+  transition: background-color .3s;
 }
 
 .container {
   margin:auto;
   width: 90%;
+}
+.container * {
+  transition: color .3s, background-color .3s;
 }
 
 #informacion {

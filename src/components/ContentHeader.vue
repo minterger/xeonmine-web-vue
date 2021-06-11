@@ -60,6 +60,7 @@ export default {
     border-width: 0 0 10vh 100vw;
     border-style: solid;
     border-color: transparent transparent var(--color-bg-content) transparent;
+    transition: border-color .3s;
   }
   
   .boton {

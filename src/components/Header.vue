@@ -49,6 +49,7 @@ export default {
     display: flex;
     height: 3em;
     box-shadow: 0px 1px 10px var(--shadow-color);
+    transition: background-color .3s, box-shadow .2s;
 }
 .header{
     z-index: 10;
@@ -59,6 +60,8 @@ export default {
     text-decoration: none;
     color: var(--color-text);
     font-size: 1.5em;
+    font-weight: 500;
+    transition: color .3s
 }
 .menu-items {
     list-style: none;
