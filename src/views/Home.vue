@@ -2,7 +2,7 @@
   <div>
     <ContentHeader :msg="msg"/>
     <section id="informacion" class="container">
-      <img class="img-svg" src="img/chat_bot.svg" alt="">
+      <img class="img-svg" src="img/chat_bot-min.svg" alt="">
       <div>
         <h3 class="title-text-right">Sobre Nuestro Bot</h3>
         <p class="text-right">Necesitas un bot de moderación y entretenimiento? Te presentó  a Xeonmine</p>

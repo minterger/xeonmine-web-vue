@@ -25,4 +25,10 @@ export default {
   .text-right {
     margin-top: 10px;
   }
+
+  @media screen and (max-width: 545px) {
+    .text-right {
+      text-align: center;
+    }
+  }
 </style>

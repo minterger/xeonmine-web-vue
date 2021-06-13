@@ -1,5 +1,5 @@
 <template>
-  <button class="change-theme" @click="changeTheme">
+  <button class="change-theme" aria-label="Cambiar Tema" @click="changeTheme">
     <i class="bx bxs-sun" v-if=" (theme == 'dark' || theme == null) &&  darkMode.matches == true " ></i>
     <i class="bx bxs-moon" v-else-if=" (theme == 'white' || theme == null) && darkMode.matches == false " ></i>
     <i class="bx bxs-moon" v-else-if="theme == 'white'" ></i>
@@ -52,16 +52,21 @@ export default {
     bottom: 15px;
     border: none;
     border-radius: 100px;
-    transition: background-color .3s;
+    transition: transform .3s, background-color .3s;
 }
+
+.change-theme:active {
+  transform: scale(1.1);
+  transition: transform .3s;
+}
+
 .change-theme .bx {
     font-size: 1.5rem;
-    transition: font-size .5s ease-in-out;
     color: var(--text-color);
-    transition: color .3s;
+    transition: color .3s, transform .3s ease-in-out;
 }
 .change-theme:hover .bx{
-    transition: font-size .5s ease-in-out;
-    font-size: 1.7rem;
+    transition: transform .3s ease-in-out;
+    transform: scale(1.2);
 }
 </style>

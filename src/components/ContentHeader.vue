@@ -1,7 +1,7 @@
 <template>
-  <main id="content" class="content-invite" style="background-image: url(/img/bokeh.jpg);">
+  <main id="content" class="content-invite" style="background-image: url(/img/bokeh-min.jpg);">
     <div class="container">
-      <img class="logo" src="/img/logo.jpeg" alt="">
+      <img class="logo" src="/img/logo.ico" alt="">
       <p class="logo-text">{{msg.text}}</p>
       <div>
         <a href="https://discord.com/oauth2/authorize?client_id=720774737181278280&permissions=8&scope=bot" class="boton">Invitar</a>
@@ -74,6 +74,12 @@ export default {
     text-decoration: none;
     border-radius: 16px;
     margin: 10px 10px;
+    transition: transform .3s;
+  }
+  
+  .boton:active {
+    transform: scale(1.1);
+    transition: transform .3s;
   }
 
   .bx {

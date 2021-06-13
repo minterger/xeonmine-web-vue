@@ -22,11 +22,6 @@ export default {
 </script>
 
 <style>
-:root {
-  --nor-query-width: 924px;
-  --mid-query-width: 545px;
-  --min-query-width: 400px;
-}
 body {
   --color-text: #000000;
   --color-items: #131313;
