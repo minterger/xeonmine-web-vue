@@ -1,5 +1,6 @@
 <template>
   <div>
+    <metainfo />
     <ContentHeader :msg="msg"/>
     <section id="informacion" class="container">
       <img class="img-svg" src="img/chat_bot-min.svg" alt="">
@@ -25,6 +26,12 @@ export default {
       msg: {
         text: 'Invita nuestro bot a tu discord para que te ayude a administrarlo de la forma correcta'
       }
+    }
+  },
+  metaInfo() {
+    return {
+      title: 'Xeonmine Bot - Home',
+      description: 'Estas buscando un bot de discord que te ayude a administrar tu server y a la vez tener un poco de diversion, invita a nuestro bot',
     }
   }
 }

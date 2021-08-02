@@ -1,5 +1,6 @@
 <template>
   <div class="sobre">
+    <metainfo />
     <ContentHeader :msg="msg" />
     <section id="informacion" class="container">
       <h1 class="title-text-right">Sobre Nosotros</h1>
@@ -23,6 +24,12 @@ export default {
       msg: {
         text: 'En esta seccion te comentamos un poco sobre nosotros y nuestro bot'
       }
+    }
+  },
+  metaInfo() {
+    return {
+      title: 'Xeonmine Bot - Sobre Nosotros',
+      description: 'En esta pagina veras lo relacionado con nosotros y el bot, un bot de discord que te ayuda a administrar tu server y a la vez tener un poco de diversion, invita a nuestro bot',
     }
   }
 }

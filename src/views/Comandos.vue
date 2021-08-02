@@ -1,5 +1,6 @@
 <template>
   <div class="comandos">
+    <metainfo />
     <ContentHeader :msg="msg" />
     <section id="informacion" class="container">
       <h1 class="title-text-right">Comandos del Bot</h1>
@@ -133,7 +134,13 @@ export default {
         },
       ]
     }
-  }
+  },
+  metaInfo() {
+      return {
+        title: 'Xeonmine Bot - Comandos',
+        description: 'En esta pagina veras todos los comandos de este bot un bot de discord que te ayudA a administrar tu server y a la vez tener un poco de diversion, invita a nuestro bot',
+      }
+    }
 }
 </script>
 

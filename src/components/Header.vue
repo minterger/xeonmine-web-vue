@@ -6,7 +6,7 @@
             <ul id="menu" class="menu-items" :class="[isActiveMenu ? 'menu2' : 'menu1']">
             <li><router-link exact-active-class="active" to="/" @click="toggleMenu">Inicio</router-link></li>
             <li><router-link exact-active-class="active" to="/comandos" @click="toggleMenu">Comandos</router-link></li>
-            <li><router-link exact-active-class="active" to="/sobre" @click="toggleMenu">Sobre Mi</router-link></li>
+            <li><router-link exact-active-class="active" to="/sobre" @click="toggleMenu">Sobre Nosotros</router-link></li>
             </ul>
             <span class="btn-menu" @click="toggleMenu"><i class='bx bx-menu' :class="[isActiveMenu ? 'bx-x' : 'bx-menu']"></i></span>
         </nav>
