@@ -7,7 +7,7 @@
       <div>
         <p class="text-right">
           Los Bots fueron creados principalmente para la comunidad de Xeonmine,
-          pero se abrieron al público para que mas gente lso pudiera usar
+          pero se abrieron al público para que mas gente los pudiera usar
         </p>
         <p class="text-right">
           El creador del Bot de moderación es <strong>𝑅𝒶𝒾𝓃#5009</strong>, el del
