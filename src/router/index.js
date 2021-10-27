@@ -13,8 +13,18 @@ const routes = [
   },
   {
     path: '/comandos',
-    name: 'Comandos',
-    component: () => import('@/views/Comandos.vue')
+    name: 'ComandosXM',
+    component: () => import('@/views/ComandosXeon.vue')
+  },
+  {
+    path: '/comandosmc',
+    name: 'ComandosXMMC',
+    component: () => import('@/views/ComandosXeonMC.vue')
+  },
+  {
+    path: '/invite',
+    name: 'Invite',
+    component: () => import('@/views/Invite.vue')
   },
   {
     path: '/:404*',
