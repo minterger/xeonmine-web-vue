@@ -32,17 +32,16 @@
           <li>
             <router-link
               exact-active-class="active"
-              to="/invite"
-              @click="toggleMenu"
-              >Invitar</router-link
-            >
-          </li>
-          <li>
-            <router-link
-              exact-active-class="active"
               to="/sobre"
               @click="toggleMenu"
               >Sobre Nosotros</router-link
+            >
+          </li>
+          <li>
+            <router-link class="invite"
+              to="/invite"
+              @click="toggleMenu"
+              >Invitar</router-link
             >
           </li>
         </ul>
@@ -81,6 +80,7 @@ export default {
 .container-head {
   display: flex;
   margin: auto;
+  max-width: 1400px;
   width: 90%;
   align-items: center;
   justify-content: space-between;
@@ -134,6 +134,15 @@ li a.active {
   display: none;
 }
 
+.menu-items li a.invite {
+  background: crimson;
+  color: #fff;
+}
+
+.menu-items li a.invite:hover {
+  background: crimson;
+}
+
 @media screen and (max-width: 924px) {
   .container-head {
     width: 100%;
@@ -146,7 +155,7 @@ li a.active {
   }
 }
 
-@media screen and (max-width: 545px) {
+@media screen and (max-width: 800px) {
   .title {
     margin-left: 15px;
   }

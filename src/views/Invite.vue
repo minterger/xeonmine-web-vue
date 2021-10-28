@@ -46,7 +46,7 @@ export default {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  max-width: 800px;
+  max-width: 900px;
 }
 
 .div {
@@ -67,17 +67,17 @@ span {
 .link {
   color: #ffffff;
   text-decoration: none;
-  border-radius: 18px;
+  border-radius: 15px;
   margin-left: 10px;
   font-size: 1.3rem;
-  padding: 8px 23px;
-  background: orangered;
+  padding: 7px 23px;
+  background: rgb(214, 29, 66);
   cursor: pointer;
   transition: background .5s ease;
 }
 
 .link:hover {
-  background: rgb(255, 104, 48);
+  background: rgb(221, 49, 84);
   transition: background .5s ease;
 }
 </style>
