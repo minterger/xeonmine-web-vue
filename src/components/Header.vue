@@ -66,7 +66,7 @@ export default {
   },
   methods: {
     toggleMenu() {
-      const match = window.matchMedia("(max-width: 545px)");
+      const match = window.matchMedia("(max-width: 800px)");
       if (match.matches) {
         this.isActiveMenu = !this.isActiveMenu;
         document.querySelector(".container-all").classList.toggle("show");
