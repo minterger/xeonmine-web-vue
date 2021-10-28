@@ -6,11 +6,27 @@
       <h1 class="title-text-right">Invita alguno de nuestros Bots</h1>
       <div class="div">
         <span>Bot XeonMine Moderación:</span>
-        <a class="link" href="https://discord.com/oauth2/authorize?client_id=720774737181278280&permissions=8&scope=bot" target="_blank" rel="noopener noreferrer">Link de Invitacion</a>
+        <span
+          ><a
+            class="link"
+            href="https://discord.com/oauth2/authorize?client_id=720774737181278280&permissions=8&scope=bot"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Link de Invitacion</a
+          >
+        </span>
       </div>
       <div class="div">
         <span>Bot XeonMine Minecraft:</span>
-        <a class="link" href="https://discord.com/oauth2/authorize?client_id=795748469264351313&scope=bot&permissions=1345611902" target="_blank" rel="noopener noreferrer">Link de Invitacion</a>
+        <span
+          ><a
+            class="link"
+            href="https://discord.com/oauth2/authorize?client_id=795748469264351313&scope=bot&permissions=1345611902"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Link de Invitacion</a
+          >
+        </span>
       </div>
     </section>
   </div>
@@ -51,6 +67,8 @@ export default {
 
 .div {
   margin: 30px 10px;
+  display: inline-flex;
+  flex-flow: wrap;
 }
 
 .title-text-right {
@@ -62,6 +80,7 @@ export default {
 span {
   font-weight: 500;
   font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 .link {
@@ -74,11 +93,17 @@ span {
   padding: 7px 23px;
   background: rgb(214, 29, 66);
   cursor: pointer;
-  transition: background .5s ease;
+  transition: background 0.5s ease;
 }
 
 .link:hover {
   background: rgb(221, 49, 84);
-  transition: background .5s ease;
+  transition: background 0.5s ease;
+}
+
+@media screen and (max-width: 621px) {
+  .div {
+    justify-content: center;
+  }
 }
 </style>
