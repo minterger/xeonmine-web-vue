@@ -65,6 +65,7 @@ span {
 }
 
 .link {
+  white-space: nowrap;
   color: #ffffff;
   text-decoration: none;
   border-radius: 15px;
