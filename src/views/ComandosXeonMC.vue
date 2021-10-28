@@ -7,7 +7,7 @@
         Comandos del Bot de Discord para Minecraft
       </h1>
       <div>
-        <h2 class="deco">Comandos Generales</h2>
+        <h2 class="margin deco"><i class='bx bx-right-arrow'></i><span>Comandos Generales</span></h2>
         <p class="text-right" v-for="command in usuarios" :key="command.name">
           <strong>{{ command.name }}</strong
           ><br />
@@ -15,7 +15,7 @@
         </p>
       </div>
       <div>
-        <h2 class="margin deco">Comandos Administrador</h2>
+        <h2 class="margin deco"><i class='bx bx-right-arrow'></i><span>Comandos Administrador</span></h2>
         <p
           class="text-right"
           v-for="command in administradores"
@@ -155,8 +155,9 @@ export default {
   padding-top: 30px;
 }
 
-.deco {
+.deco span {
   text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 @media screen and (max-width: 924px) {

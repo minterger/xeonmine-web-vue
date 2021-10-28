@@ -67,15 +67,17 @@ span {
 .link {
   color: #ffffff;
   text-decoration: none;
-  border-radius: 15px;
+  border-radius: 18px;
   margin-left: 10px;
   font-size: 1.3rem;
-  padding: 8px 15px;
+  padding: 8px 23px;
   background: orangered;
   cursor: pointer;
+  transition: background .5s ease;
 }
 
 .link:hover {
   background: rgb(255, 104, 48);
+  transition: background .5s ease;
 }
 </style>
