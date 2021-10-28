@@ -6,11 +6,11 @@
       <h1 class="title-text-right">Invita alguno de nuestros Bots</h1>
       <div class="div">
         <span>Bot XeonMine Moderación:</span>
-        <a class="link" href="https://discord.com/oauth2/authorize?client_id=720774737181278280&permissions=8&scope=bot" target="_blank" rel="noopener noreferrer">Invitar</a>
+        <a class="link" href="https://discord.com/oauth2/authorize?client_id=720774737181278280&permissions=8&scope=bot" target="_blank" rel="noopener noreferrer">Link de Invitacion</a>
       </div>
       <div class="div">
         <span>Bot XeonMine Minecraft:</span>
-        <a class="link" href="https://discord.com/oauth2/authorize?client_id=795748469264351313&scope=bot&permissions=1345611902" target="_blank" rel="noopener noreferrer">Invitar</a>
+        <a class="link" href="https://discord.com/oauth2/authorize?client_id=795748469264351313&scope=bot&permissions=1345611902" target="_blank" rel="noopener noreferrer">Link de Invitacion</a>
       </div>
     </section>
   </div>
